@@ -1,0 +1,29 @@
+:root {
+  --bgColor: white;
+  --inputColor: black;
+  --outlineColor: dodgerblue;
+  --beamColor: yellow;
+  --spacer: 1rem;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  background: var(--bgColor);
+  
+  &.show-password {
+    --bgColor: black;
+    --inputColor: white;
+    --outlineColor: var(--beamColor);
+  }
+}
+
+form {
